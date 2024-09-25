@@ -1,0 +1,43 @@
+@font-face { font-family: Parchment; src: url('../fonts/ParchmentMF.ttf'); } 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Parchment;
+    color:crimson;
+}
+
+h1 {
+font-size: 56px;
+}
+
+h2 {
+font-size: 44px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.threeCol {
+ display: flex;
+ justify-content: center;
+}
+
+.article {
+    flex-basis: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.article img {
+    max-width: 400px;
+    height: auto;
+}
