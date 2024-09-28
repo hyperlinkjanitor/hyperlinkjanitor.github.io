@@ -16,6 +16,15 @@ font-size: 44px;
 h3 {
     font-size: 32px;
 }
+h4 {
+    font-size: 28px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 20px;
+}
 
 body {
     background-color: aquamarine;
@@ -40,6 +49,16 @@ body {
 .article img {
     max-width: 400px;
     height: auto;
+}
+
+img.card {
+    width: 300px;
+    height: auto;
+}
+
+img.bigimg {
+    max-width: 800px;
+    height: auto; 
 }
 
 @media screen and (max-width: 4768px) {
