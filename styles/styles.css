@@ -33,6 +33,20 @@ body {
     align-items: center;
 }
 
+.header {
+
+}
+
+.header-inner {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .threeCol {
  display: flex;
  justify-content: center;
@@ -60,6 +74,100 @@ img.bigimg {
     max-width: 800px;
     height: auto; 
 }
+
+@keyframes rotateInfinite {
+    from {
+      transform: rotateZ(0deg);
+    }
+  
+    to {
+        transform: rotateZ(360deg);
+    }
+  }
+
+.manaWheel {
+    width: 100px;
+    height: 100px;
+    rotate: 360deg;
+    animation: 5s infinite linear rotateInfinite;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.manaWheel > div {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+position: absolute;
+border: 2px solid black;
+}
+
+.manaWheel > div:before {
+    /* highlight */
+content: '';
+position: absolute;
+z-index: 1;
+}
+
+.manaWheel > div:after {
+    /* shadow */
+content: '';
+position: absolute;
+z-index: 1;
+}
+
+/* .manaWheel .white {
+background-color: #ebcd6b;
+top: calc(5% - 17px);
+left: calc(50% - 17px);
+}
+.manaWheel .blue {
+    background-color: #2cadb9;
+    top: calc(40% - 17px);
+    left: calc(98% - 17px);
+}
+.manaWheel .black {
+    background-color: #605635;
+    left: calc(79% - 17px);
+    top:calc(96% - 17px);
+}
+.manaWheel .red {
+    background-color: #d95413;
+    left: calc(21% - 17px);
+    top:calc(96% - 17px);
+}
+.manaWheel .green {
+    background-color: #7c9a02;
+    left: calc(2% - 17px);
+    top:calc(40% - 17px);
+} */
+
+.manaWheel .white {
+    background-color: #ebcd6b;
+    top: calc(5% - 17px);
+    left: calc(50% - 17px);
+    }
+    .manaWheel .blue {
+        background-color: #2cadb9;
+        top: calc(40% - 17px);
+        left: calc(98% - 17px);
+    }
+    .manaWheel .black {
+        background-color: #605635;
+        left: calc(79% - 17px);
+        top:calc(96% - 17px);
+    }
+    .manaWheel .red {
+        background-color: #d95413;
+        left: calc(21% - 17px);
+        top:calc(96% - 17px);
+    }
+    .manaWheel .green {
+        background-color: #7c9a02;
+        left: calc(2% - 17px);
+        top:calc(40% - 17px);
+    }
 
 @media screen and (max-width: 4768px) {
     .threeCol {
