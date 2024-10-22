@@ -117,6 +117,24 @@ position: absolute;
 z-index: 1;
 }
 
+.outer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.outer .inner {
+    max-width: 900px;
+    text-align:  center;
+    align-items: center;
+    justify-content: center;
+display: flex;
+flex-direction: column;
+}
+.caption {
+    font-size: 10px;
+}
+
 /* .manaWheel .white {
 background-color: #ebcd6b;
 top: calc(5% - 17px);
